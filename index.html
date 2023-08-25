@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Icon Template Square</title>
+    <style>
+        .row{
+            width:720px;
+            margin: 10px auto 10px auto ;
+        }
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding:10px;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(243, 159, 40);">
+    <div class="row">
+        <div class="image-container"><img id="sm1" src="img/sample_1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="sm2" src="img/sample_2.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="sm3" src="img/sample_3.png" height="200" width="200"/></div>
+    </div>
+
+
+    <div class="row">
+        <div class="image-container"><img id="sm4" src="img/sample_4.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="sm5" src="img/sample_5.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="sm6" src="img/sample_6.png" height="200" width="200"/></div>
+        </div>
+
+    <div class="row">
+        <div class="image-container"><img id="sm7" src="img/sample_7.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="sm8" src="img/sample_8.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="sm9" src="img/sample_9.png" height="200" width="200"/></div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.2/buzz.min.js"></script>
+
+    <script>
+        const sound1 = new buzz.sound ("audio/sound_1.wav")
+        const sound2 = new buzz.sound ("audio/sound_2.wav")
+        const sound3 = new buzz.sound ("audio/sound_3.wav")
+        const sound4 = new buzz.sound ("audio/sound_4.wav")
+        const sound5 = new buzz.sound ("audio/sound_5.wav")
+        const sound6 = new buzz.sound ("audio/sound_6.wav")
+        const sound7 = new buzz.sound ("audio/sound_7.wav")
+        const sound8 = new buzz.sound ("audio/sound_8.wav")
+        const sound9 = new buzz.sound ("audio/sound_9.wav")
+
+        // document.getElementById ("sm1").onmouseover = () => {
+        //     console.log ("mouseover detected")
+        // }
+            
+        const sm1 = document.getElementById ("sm1")
+        sm1.onpointerdown = () => {
+            // console.log ("pointerdown detected")
+            // console.log (sound1.getDuration ())
+            sm1.src = `img/sample_11.png`
+            sound1.play ()
+        }
+        sm1.onpointerup = () => sm1.src = `img/sample_1.png`
+
+        const sm2 = document.getElementById ("sm2")
+        sm2.onpointerdown = () => {
+            sm2.src = `img/sample_22.png`
+            sound2.play ()
+        }
+        sm2.onpointerup = () => sm2.src = `img/sample_2.png`
+
+
+        const sm3 = document.getElementById ("sm3")
+        sm3.onpointerdown = () => {
+            sm3.src = `img/sample_33.png`
+            sound3.play ()
+        }
+        sm3.onpointerup = () => sm3.src = `img/sample_3.png`
+
+        const sm4 = document.getElementById ("sm4")
+        sm4.onpointerdown = () => {
+            sm4.src = `img/sample_44.png`
+            sound4.play ()
+        }
+        sm4.onpointerup = () => sm4.src = `img/sample_4.png`
+
+        const sm5 = document.getElementById ("sm5")
+        sm5.onpointerdown = () => {
+            sm5.src = `img/sample_55.png`
+            sound5.play ()
+        }
+        sm5.onpointerup = () => sm5.src = `img/sample_5.png`
+
+        const sm6 = document.getElementById ("sm6")
+        sm6.onpointerdown = () => {
+            sm6.src = `img/sample_66.png`
+            sound6.play ()
+        }
+        sm6.onpointerup = () => sm6.src = `img/sample_6.png`
+
+        const sm7 = document.getElementById ("sm7")
+        sm7.onpointerdown = () => {
+            sm7.src = `img/sample_77.png`
+            sound7.play ()
+        }
+        sm7.onpointerup = () => sm7.src = `img/sample_7.png`
+
+        const sm8 = document.getElementById ("sm8")
+        sm8.onpointerdown = () => {
+            sm8.src = `img/sample_88.png`
+            sound8.play ()
+        }
+        sm8.onpointerup = () => sm8.src = `img/sample_8.png`
+
+        const sm9 = document.getElementById ("sm9")
+        sm9.onpointerdown = () => {
+            sm9.src = `img/sample_99.png`
+            sound9.play ()
+        }
+        sm9.onpointerup = () => sm9.src = `img/sample_9.png`
+    </script>
+
+</body>
+    
+</html>
